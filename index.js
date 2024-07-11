@@ -17,8 +17,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
-// commented below secret key
-// const twilioClient = twilio('AC5b9365b04930567505c364aaf044c106', 'ee5e2b4b94d8639087d48c3790d16dfa');
+
+// twilio key
 
 // MongoDB connection
 mongoose.connect('mongodb://localhost:27017/Simple_database', { useNewUrlParser: true, useUnifiedTopology: true });
