@@ -1,0 +1,80 @@
+.container-animal {
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.actions .edit {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.actions .delete {
+    background-color: #d9534f;
+    color: white;
+}

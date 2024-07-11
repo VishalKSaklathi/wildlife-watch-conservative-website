@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps - Wildlife Watch</title>
+    <style>
+        main {
+            margin-top: 150px;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="map2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <header class="header fixed-top">
+            <div class="container">
+                <h1 class="logo">Wildlife Watch</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/welcome.html">Home</a></li>
+                        <li><a href="/account.html">Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="transparent-div">
+            <a href="/sightings/sightings.html">Report Sighting</a>
+            <li class=" dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Learn
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="dropdown" href="/information.html">Wildlife</a></li>
+                    <li><a class="dropdown-item" id="dropdown" href="/graph/graph.html">Graphs</a></li>
+                    <li><a class="dropdown-item" id="dropdown" href="/maps/map.html">Maps</a></li>
+                </ul>
+            </li>
+            <a href="/reports_list_user.html">View Sightings</a>
+        </div>
+        <main>
+            <div class="block-map" style="margin-bottom: 20px; margin-top: 20px;">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="map1.html" target="content-frame">Tiger Reserves</a></li>
+                        <li><a href="map2.html" target="content-frame">National Parks</a></li>
+                        <li><a href="map3.html" target="content-frame">Wildlife Sanctuaries</a></li>
+                    </ul>
+                </div>
+                <iframe id="iframe" name="content-frame" src="map1.html"></iframe>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Wildlife Watch. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Dropdown btn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

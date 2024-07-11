@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Watch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <header class="header fixed-top">
+            <div class="container">
+                <h1 class="logo">Wildlife Watch</h1>
+                <nav>
+                    <ul>
+                        <li><a href="welcome.html" id="accountLink">Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="transparent-div">
+            <a href="sightings/sightings.html">Report Sighting</a>
+            <li class=" dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Learn
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="dropdown" href="information.html">Wildlife</a></li>
+                    <li><a class="dropdown-item" id="dropdown" href="graph/graph.html">Graphs</a></li>
+                    <li><a class="dropdown-item" id="dropdown" href="maps/map.html">Maps</a></li>
+                </ul>
+            </li>
+            <a href="reports_list_user.html">View Sightings</a>
+        </div>
+        <main>
+            <section class="welcome-section">
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="static-text">
+                        <h2>Wildlife Watch</h2>
+                        <p>Explore wildlife sightings and contribute to conservation efforts.
+                            Our platform is designed to facilitate wildlife conservation by enabling real-time sighting
+                            reports and fostering a
+                            community of like-minded individuals.</p>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/s1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/s3.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/s7.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <div class="block hide">
+                <img src="./images/block-1.png" alt="block-1" style="width: 350px;">
+                <p>
+                    <b>Poaching</b> is the illegal hunting, capturing, or killing of wildlife, often targeting protected
+                    species
+                    for their valuable
+                    parts like ivory, horns, or fur. It disrupts ecosystems, endangers species, and undermines
+                    conservation efforts, driven
+                    by motives such as commercial gain, traditional medicine, and the exotic pet trade.
+                </p>
+            </div>
+            <div class="block hide">
+                <p>
+                    <b>Habitat destruction</b> means ruining or damaging the natural homes of plants and animals. This
+                    happens when people change
+                    or destroy places where these creatures live, like chopping down forests, building cities, or
+                    polluting rivers. It's a
+                    big problem because it can make animals and plants homeless and even lead to their extinction.
+                </p>
+                <img src="./images/block-2.png" alt="block-2" style="width: 350px;">
+            </div>
+            <div class="block hide">
+                <img src="./images/block-3.png" alt="block-3" style="width: 350px;">
+                <p>
+                    <b>Climate change and pollution</b> significantly harm wildlife, disrupting habitats and food
+                    sources. Rising temperatures,
+                    altered precipitation, and pollution lead to habitat loss, disease spread, and biodiversity decline,
+                    endangering
+                    species' survival and ecosystem balance.
+                </p>
+            </div>
+            <div class="block hide">
+                <p style="background-color:#117A65; color:aliceblue; padding: 25px !important">
+                    <b>"</b> Public awareness and
+                    education are crucial in
+                    cultivating
+                    compassion for protecting animals. Implementing sustainable
+                    solutions to address these issues relies on informed and engaged communities
+                    <b>"</b>
+                </p>
+            </div>
+            <hr>
+            <div class="block-map" style="margin-bottom: 20px; margin-top: 20px;">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="maps/map1.html" target="content-frame">Tiger Reserves</a></li>
+                        <li><a href="maps/map2.html" target="content-frame">National Parks</a></li>
+                        <li><a href="maps/map3.html" target="content-frame">Wildlife Sanctuaries</a></li>
+                    </ul>
+                </div>
+                <iframe id="iframe" name="content-frame" src="maps/map1.html"></iframe>
+            </div>
+            <div class="container-about">
+                <h1>About Us</h1>
+                <div class="row">
+                    <div class="designer-card">
+                        <img src="images/Vishal.JPG" alt="Designer 1">
+                        <h3>Vishal K S</h3>
+                        <p>vishal.krishnamurthi.saklathi@gmail.com</p>
+                        <p>phone.No: +91 8217416792</p>
+                    </div>
+                    <div class="designer-card">
+                        <img src="images/Pradyumna.jpg" alt="Designer 2">
+                        <h3>Pradyumna P</h3>
+                        <p>pradyumnaprao77@gmail.com</p>
+                        <p>phone.No: +91 8618360392</p>
+                    </div>
+                    <div class="designer-card">
+                        <img src="images/Pavan.jpg" alt="Designer 3">
+                        <h3>Pavan Kalburgi</h3>
+                        <p>www.kalburgipavan@gmail.com</p>
+                        <p>phone.No: +91 8904024305</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Wildlife Watch. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- About window -->
+    <div id="accountPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>User Account Information</h2>
+            <p><strong>Name:</strong> <span id="userName"></span></p>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+            <p><strong>Location:</strong> <span id="userLocation"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="userMobileNumber"></span></p>
+        </div>
+    </div>
+    <script>
+        // Function to get URL parameters
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search.substring(1);
+            const queries = queryString.split("&");
+            for (const query of queries) {
+                const [key, value] = query.split("=");
+                params[key] = decodeURIComponent(value);
+            }
+            return params;
+        }
+
+        // Function to update the HTML content with user info
+        function updateUserInfo() {
+            const params = getQueryParams();
+            if (params.name && params.email && params.location && params.mobileNumber) {
+                document.getElementById('userName').innerText = params.name;
+                document.getElementById('userEmail').innerText = params.email;
+                document.getElementById('userLocation').innerText = params.location;
+                document.getElementById('userMobileNumber').innerText = params.mobileNumber;
+            }
+        }
+
+        // Call the function to update user info
+        updateUserInfo();
+    </script>
+
+    <script src="pop-up.js"></script>
+    <script src="welcome.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Dropdown btn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

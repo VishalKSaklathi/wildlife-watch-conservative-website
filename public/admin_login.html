@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Wildlife Watch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Wildlife Watch</h1>
+            <nav>
+                <ul>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="transparent-div">
+        <a href="sightings.html">Report Sighting</a>
+        <a href="#linkB">Learn</a>
+        <a href="#linkC">About</a>
+    </div>
+
+    <main>
+        <section class="login-section">
+            <div class="container">
+                <div class="login-form">
+                    <h2>Login to Wildlife Watch</h2>
+                    <form action="admin_login" method="POST">
+                        <label for="adminID">Watcher ID:</label>
+                        <input type="text" id="adminID" name="adminID" required>
+                        <label for="admin_name">Wacher Name:</label>
+                        <input type="text" id="admin_name" name="admin_name" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div style="display: inline-flex;">
+                        <p>New user? <a href="signup.html">Sign up here</a></p>
+                        <p style="width: 400px;"></p>
+                        <p id="accountLink"><a href="#">Forgot Password?</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div>
+        <p style="text-align: center;padding-bottom: 50px;"><i>*Admin logging in should be already registerd in Wildlife
+                Watch Platform.
+                <br>Invalid credentials leads to
+                strict
+                action
+            </i>
+        </p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="https://aranya.gov.in/aranyacms/(S(wu5e3zceqds5tx4oyeim2pps))/English/WildLife.aspx">Karnataka
+                    Forest Department</a></p>
+            <p style>&copy; 2024 Wildlife Watch. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

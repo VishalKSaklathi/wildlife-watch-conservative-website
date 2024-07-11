@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Wildlife Watch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Wildlife Watch</h1>
+            <nav>
+                <ul>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="transparent-div">
+        <a href="sightings.html">Report Sighting</a>
+        <a href="#linkB">Learn</a>
+        <a href="#linkC">About</a>
+    </div>
+    <main>
+        <section class="login-section">
+            <div class="container">
+                <div class="login-form">
+                    <h2>Login to Wildlife Watch</h2>
+                    <form action="user_login" method="POST">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div style="display: inline-flex;">
+                        <p>New user? <a href="signup.html">Sign up here</a></p>
+                        <p style="width: 400px;"></p>
+                        <p id="accountLink"><a href="#">Forgot Password?</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div>
+        <p style="text-align: center;padding-bottom: 50px;"><i>*Enter the credentials that you have registerd to
+                Wildlife Watch Platform.
+                <br> If didn't registerd, then get Sign Up
+            </i>
+        </p>
+    </div>
+    <footer class="footer" style="position: fixed; bottom: 0; width: 100%;">
+        <div class="container">
+            <p>&copy; 2024 Wildlife Watch. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- forgot password -->
+    <div id="accountPopup" class="popup">
+        <div class="popup-content">
+            <form action="forgot-password" method="POST">
+                <input type=" email" id="forgotemail" name="forgotemail" placeholder="Email" required><br>
+                <input type="text" id="password1" name="password1" placeholder="*Enter animal name" required><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p style="margin-top: 10px;">
+                *Enter name of animal that you have given for favorite animal name during Sign up
+            </p>
+        </div>
+    </div>
+    <script src="pop-up.js"></script>
+</body>
+
+</html>

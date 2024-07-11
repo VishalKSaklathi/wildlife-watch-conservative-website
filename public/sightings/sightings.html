@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Sighting Report - Wildlife Watch</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="sighting.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+
+<body>
+    <header class="header ">
+        <div class="container">
+            <h1 class="logo">Wildlife Watch</h1>
+            <nav>
+                <ul>
+                    <li><a href="/welcome.html">Home</a></li>
+                    <li><a href="/account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="transparent-div">
+        <a href="sightings.html">Report Sighting</a>
+        <li class=" dropdown">
+            <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" id="dropdown" href="/information.html">Wildlife</a></li>
+                <li><a class="dropdown-item" id="dropdown" href="/graph/graph.html">Graphs</a></li>
+                <li><a class="dropdown-item" id="dropdown" href="/maps/map.html">Maps</a></li>
+            </ul>
+        </li>
+    </div>
+    <main>
+        <section class="report-section">
+            <div class="container">
+                <div style="text-align: center;">
+                    <h1>Animal Sighting Report</h1>
+                </div>
+                <form action="report-sighting" method="POST" enctype="multipart/form-data">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Enter your emailId" required>
+
+                    <label for="sightingDate">Date of Sighting:</label>
+                    <input type="date" id="sightingDate" name="sightingDate" required>
+
+                    <label for="uploadPic">Upload Image:</label>
+                    <input type="file" id="uploadPic" name="uploadPic" accept="image/*" required>
+                    <img id="previewImage" src="#" alt="Image Preview"
+                        style="display:none; width: 200px; height: auto; margin-top: 10px;">
+
+                    <label for="location">Location of Sighting:</label>
+                    <div id="map" style="height: 400px;"></div>
+                    <div id="coordinates">
+                        <label for="latitude">Latitude:</label>
+                        <input type="text" id="latitude" name="latitude" readonly>
+                        <label for="longitude">Longitude:</label>
+                        <input type="text" id="longitude" name="longitude" readonly>
+                        <label for="placeName">Place Name:</label>
+                        <input type="text" id="placeName" name="placeName">
+                    </div>
+                    <label for="comments">Additional comments:</label>
+                    <textarea name="comments" id="comments" placeholder="anything to say..."></textarea>
+
+                    <button type="submit">Report Sighting</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Wildlife Watch. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="sightings.js"></script>
+    <!-- Dropdown btn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

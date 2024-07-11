@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Wildlife Watch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Wildlife Watch</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <!-- <li><a href="signup.html">Sign Up</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="transparent-div">
+        <a href="sightings.html">Report Sighting</a>
+        <a href="#linkB">Learn</a>
+        <a href="#linkC">About</a>
+    </div>
+
+    <main>
+        <section class="signup-section">
+            <div class="container">
+                <div class="signup-form">
+                    <h2>Sign Up for Wildlife Watch</h2>
+                    <form action="sign_up" method="POST">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" required>
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="text" id="mobile" name="mobile" required>
+                        <div>
+                            <label for="admin">As a</label>
+                            <input type="radio" id="user" name="role" value="0" style="width: 5%;"
+                                onchange="addAdminId()">User
+                            <input type="radio" id="admin" name="role" value="1" onchange="addAdminId()"
+                                style="width: 5%;margin-left: 50px;">Watcher
+                        </div>
+                        <div id="adminId"></div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password1">*Enter your favorite animal name:</label>
+                        <input type="text" id="password1" name="password1">
+                        <button type="submit" value="Submit" id="submit">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <a href="index.html">Login here</a></p>
+                </div>
+            </div>
+            <center>
+                <div style="margin-top: 10px;">
+                    <p><i>*This information can be asked during forget password...</i></p>
+                </div>
+            </center>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Wildlife Watch. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addAdminId() {
+            var role = document.getElementsByName('role');
+            for (var i = 0; i < role.length; i++) {
+                if (role[i].checked) {
+                    var selectedRole = role[i].value;
+
+                    if (selectedRole === '0') {
+                        document.getElementById('adminId').innerHTML = ""
+                    }
+                    if (selectedRole === '1') {
+                        document.getElementById('adminId').innerHTML =
+                            "<label>WatcherID:</label><input type='text' id='adminID' name='adminID'>"
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

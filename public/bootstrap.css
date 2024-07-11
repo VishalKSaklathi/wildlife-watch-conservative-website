@@ -1,0 +1,38 @@
+.bg-primary {
+    background-color: #004d00 !important;
+    /* Dark green */
+}
+
+.bg-secondary {
+    background-color: #00bfff !important;
+    /* Light blue */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.d-block {
+    width: 100px;
+    height: 600px;
+}
+
+.carousel-caption {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.21);
+    color: #000;
+    text-align: left;
+}
